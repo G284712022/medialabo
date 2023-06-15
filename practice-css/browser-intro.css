@@ -1,7 +1,11 @@
-p {
+.body p {
 	color: navy;
 	font-size: small;
 	background-color: #dfdfdf;
+}
+
+p {
+	color: navy;
 }
 
 p.info {
