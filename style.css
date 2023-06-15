@@ -1,0 +1,28 @@
+h1 {
+    background-color: orange;
+    border-bottom: 10px solid red ;
+}
+body {
+    background-color: rgb(251, 251, 251);
+}
+h2 {
+    border: 5px solid green;
+}
+h3 {
+    border-bottom: 5px dotted greenyellow;
+}
+.exp {
+    background-color: aquamarine;
+}
+a:link {
+    color: purple;
+}
+a:visited {
+    color: blue;
+}
+a:hover {
+    color: red;
+}
+.emp {
+    color: red;
+}
