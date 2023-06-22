@@ -200,4 +200,13 @@ let data = {
 };
 
 /////////// 課題3-2 ここからプログラムを書こう
+for(let i=0;i<data.results.shop.length;i=i+1){
+  console.log("検索結果"+(i+1)+"件目");
+  console.log(data.results.shop[i].access);
+  console.log(data.results.shop[i].address);
+  console.log(data.results.shop[i].budget.name);
+  console.log(data.results.shop[i].catch);
+  console.log(data.results.shop[i].genre.name);
+  console.log(data.results.shop[i].open);
+}
 
