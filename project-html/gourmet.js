@@ -201,12 +201,27 @@ let data = {
 
 /////////// 課題3-2 ここからプログラムを書こう
 for(let i=0;i<data.results.shop.length;i=i+1){
-  console.log("検索結果"+(i+1)+"件目");
-  console.log(data.results.shop[i].access);
-  console.log(data.results.shop[i].address);
-  console.log(data.results.shop[i].budget.name);
-  console.log(data.results.shop[i].catch);
-  console.log(data.results.shop[i].genre.name);
-  console.log(data.results.shop[i].open);
+  let div = document.querySelector('div#result');
+  let li = document.createElement('li');
+  let ul1 = document.createElement('ul');
+  let ul2 = document.createElement('ul');
+  let ul3 = document.createElement('ul');
+  let ul4 = document.createElement('ul');
+  let ul5 = document.createElement('ul');
+  let ul6 = document.createElement('ul');
+  li.textContent = "検索結果"+(i+1)+"件目";
+  ul1.textContent = data.results.shop[i].access;
+  ul2.textContent = data.results.shop[i].address;
+  ul3.textContent = data.results.shop[i].budget.name;
+  ul4.textContent = data.results.shop[i].catch;
+  ul5.textContent = data.results.shop[i].genre.name;
+  ul6.textContent = data.results.shop[i].open;
+  li.insertAdjacentElement('beforeend',ul1);
+  li.insertAdjacentElement('beforeend',ul2);
+  li.insertAdjacentElement('beforeend',ul3);
+  li.insertAdjacentElement('beforeend',ul4);
+  li.insertAdjacentElement('beforeend',ul5);
+  li.insertAdjacentElement('beforeend',ul6);
+  div.insertAdjacentElement('beforeend',li);
 }
 
