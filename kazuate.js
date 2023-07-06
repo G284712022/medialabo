@@ -18,7 +18,7 @@ function hantei() {
   answer.textContent = yoso;
   kaisu=kaisu+1;
 
-  if(kaisu>3){
+  if(kaisu>5){
     p.textContent = "答えは"+kotae+"でした.既にゲームは終わっています";
   }
   else if(yoso === kotae){
