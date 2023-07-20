@@ -1,11 +1,7 @@
 body {
     background-color: antiquewhite;
 }
-.list {
+ul {
     border: 1px solid red;
     background-color: azure;
-}
-ul ul {
-    background-color:bisque;
-
 }

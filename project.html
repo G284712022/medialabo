@@ -4,65 +4,68 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="project.css">
     <title>グルメ情報</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     <script src="gourmet.js" defer></script>
    </head> 
    <body>
-    <h2>探したいお店のジャンル：</h2>
+    <h1>グルメ情報検索</h1>
+    <h2>探したいお店のジャンルにチェックを入れてください</h2>
     <div>
-        <input id="izakaya" type="radio" name="gen" value="居酒屋">
+        <input id="G001" type="radio" name="gen" value="居酒屋">
         <label for="gen">居酒屋</label>
-        <input id="dining" type="radio" name="gen" value="ダイニングバー・バル">
+        <input id="G002" type="radio" name="gen" value="ダイニングバー・バル">
         <label for="gen">ダイニングバー・バル</label>
     </div>
     <div>
-        <input id="sosaku" type="radio" name="gen" value="創作料理">
+        <input id="G003" type="radio" name="gen" value="創作料理">
         <label for="gen">創作料理</label>
-        <input id="wasyoku" type="radio" name="gen" value="和食">
+        <input id="G004" type="radio" name="gen" value="和食">
         <label for="gen">和食</label>
     </div>
     <div>
-        <input id="yosyoku" type="radio" name="gen" value="洋食">
+        <input id="G005" type="radio" name="gen" value="洋食">
         <label for="gen">洋食</label>
-        <input id="italian" type="radio" name="gen" value="イタリアン・フレンチ">
+        <input id="G006" type="radio" name="gen" value="イタリアン・フレンチ">
         <label for="gen">イタリアン・フレンチ</label>
     </div>
     <div>
-        <input id="tyuuka" type="radio" name="gen" value="中華">
+        <input id="G007" type="radio" name="gen" value="中華">
         <label for="gen">中華</label>
-        <input id="yakiniku" type="radio" name="gen" value="焼肉・ホルモン">
+        <input id="G008" type="radio" name="gen" value="焼肉・ホルモン">
         <label for="gen">焼肉・ホルモン</label>
     </div>
     <div>
-        <input id="asia" type="radio" name="gen" value="アジア・エスニック料理">
+        <input id="G009" type="radio" name="gen" value="アジア・エスニック料理">
         <label for="gen">アジア・エスニック料理</label>
-        <input id="other" type="radio" name="gen" value="各国料理">
+        <input id="G010" type="radio" name="gen" value="各国料理">
         <label for="gen">各国料理</label>
     </div>
     <div>
-        <input id="karaoke" type="radio" name="gen" value="カラオケ・パーティ">
+        <input id="G011" type="radio" name="gen" value="カラオケ・パーティ">
         <label for="gen">カラオケ・パーティ</label>
-        <input id="bar" type="radio" name="gen" value="バー・カクテル">
+        <input id="G012" type="radio" name="gen" value="バー・カクテル">
         <label for="gen">バー・カクテル</label>
     </div>
     <div>
-        <input id="ra-men" type="radio" name="gen" value="ラーメン">
+        <input id="G013" type="radio" name="gen" value="ラーメン">
         <label for="gen">ラーメン</label>
-        <input id="sweet" type="radio" name="gen" value="カフェ・スイーツ">
+        <input id="G014" type="radio" name="gen" value="カフェ・スイーツ">
         <label for="gen">カフェ・スイーツ</label>
     </div>
     <div>
-        <input id="any" type="radio" name="gen" value="その他グルメ">
+        <input id="G015" type="radio" name="gen" value="その他グルメ">
         <label for="gen">その他グルメ</label>
-        <input id="okonomi" type="radio" name="gen" value="お好み焼き・もんじゃ">
+        <input id="G016" type="radio" name="gen" value="お好み焼き・もんじゃ">
         <label for="gen">お好み焼き・もんじゃ</label>
     </div>
     <div>
-        <input id="korean" type="radio" name="gen" value="韓国料理">
+        <input id="G017" type="radio" name="gen" value="韓国料理">
         <label for="gen">韓国料理</label>
     </div>
     <div>
         <button id="search">検索</button>
     </div>
     <div id="result"></div>
+    <ul>ここに検索結果を表示します</ul>
    </body>
 </html>
