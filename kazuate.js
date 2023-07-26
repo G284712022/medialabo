@@ -16,17 +16,17 @@ function hantei() {
   let yoso = i.value;
   kaisu1.textContent = kaisu+"回目の予想:";
   answer.textContent = yoso;
-  kaisu=kaisu+1;
-
-  if(kaisu>5){
-    p.textContent = "答えは"+kotae+"でした.既にゲームは終わっています";
-  }
-  else if(yoso === kotae){
-    p.textContent = "正解です．おめでとう!";
-  }else if(yoso > kotae){
-    p.textContent = "まちがい．答えはもっと小さいですよ";
+  
+  if(yoso == kotae){
+    p.textContent = "正解です.おめでとう！";
   }else if(yoso < kotae){
     p.textContent = "まちがい．答えはもっと大きいですよ";
+  }else if(yoso > kotae){
+    p.textContent = "まちがい．答えはもっと小さいですよ";
   }
+  if(kaisu > 4){
+    p.textContent = "答えは"+kotae+"でした.既にゲームは終わっています";
+  }
+  kaisu=kaisu+1;
 }
 result.insertAdjacentElement('beforeend',p);
