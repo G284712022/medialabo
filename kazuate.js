@@ -24,7 +24,7 @@ function hantei() {
   }else if(yoso > kotae){
     p.textContent = "まちがい．答えはもっと小さいですよ";
   }
-  if(kaisu > 4){
+  if(kaisu > 3){
     p.textContent = "答えは"+kotae+"でした.既にゲームは終わっています";
   }
   kaisu=kaisu+1;
