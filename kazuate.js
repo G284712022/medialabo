@@ -23,9 +23,9 @@ function hantei() {
   }
   else if(yoso === kotae){
     p.textContent = "正解です．おめでとう!";
-  }else if(yoso >= kotae){
+  }else if(yoso > kotae){
     p.textContent = "まちがい．答えはもっと小さいですよ";
-  }else if(yoso <= kotae){
+  }else if(yoso < kotae){
     p.textContent = "まちがい．答えはもっと大きいですよ";
   }
 }
